@@ -1,6 +1,6 @@
 from solve_sudoku import solve_sudoku  # Import solve_sudoku
 
-def solve_sudoku_with_check(board):
+def solve_sudoku(board):
     if not is_valid_board(board):
         return None  # Invalid board
     solution = solve_sudoku(board)  # Call the solve_sudoku function
