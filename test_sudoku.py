@@ -1,8 +1,8 @@
 import unittest
-from sudoku import solve_sudoku_with_check
+from solve_sudoku_with_check import solve_sudoku_with_check
 
 class TestSudokuSolver(unittest.TestCase):
-    
+    # Define your tests here
     def test_valid_board(self):
         board = [
             [5, 3, 0, 0, 7, 0, 0, 0, 0],
@@ -27,7 +27,7 @@ class TestSudokuSolver(unittest.TestCase):
             [3, 4, 5, 2, 8, 6, 1, 7, 9]
         ]
         self.assertEqual(solve_sudoku_with_check(board), expected_solution)
-    
+
     def test_unsolvable_board(self):
         unsolvable_board = [
             [5, 1, 6, 8, 4, 9, 7, 3, 2],
