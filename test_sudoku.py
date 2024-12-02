@@ -1,5 +1,5 @@
 import unittest
-from solve_sudoku_with_check import solve_sudoku_with_check
+from solve_sudoku import solve_sudoku
 
 class TestSudokuSolver(unittest.TestCase):
     # Define your tests here
